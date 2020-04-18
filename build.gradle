@@ -679,6 +679,7 @@ jlink {
 
         if (OperatingSystem.current().isMacOsX()) {
             imageOptions = [
+                    '--verbose',
                     '--icon', "${projectDir}/src/main/resources/icons/jabref.icns",
                     '--resource-dir', "${projectDir}/buildres/mac"
             ]
